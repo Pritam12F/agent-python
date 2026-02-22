@@ -25,7 +25,6 @@ def getGithubInfo(username: str):
             "Accept": "application/vnd.github+json", 'X-GitHub-Api-Version': '2022-11-28'})
     data = githubInfo.json()
 
-    print(data)
 
     if githubInfo.status_code == 404:
         return "Github user doesn't exist"

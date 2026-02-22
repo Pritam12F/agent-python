@@ -135,6 +135,4 @@ def extractInfo(content: str, query: str):
 
     raw = response.choices[0].message.content
 
-    print("RAW:", repr(raw))
-
-    return response.choices[0].message.content
+    return raw
